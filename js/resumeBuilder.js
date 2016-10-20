@@ -13,20 +13,20 @@ var bio = {
     "skills": ["awesomness", "no-sleep", "delivering things"]
 };
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
-var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-var formattedSkills = HTMLskills.replace("%data%", bio.skills);
+// var formattedName = HTMLheaderName.replace("%data%", bio.name);
+// var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+// var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
+// var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+// var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+// var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+// var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+// var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+// var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 
-$("#topContacts").append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub);
-$("#header").prepend(formattedName, formattedRole);
-$("#header").append(formattedPic, formattedMessage, HTMLskillsStart);
-$("#skills").append(formattedSkills);
+// $("#topContacts").append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub);
+// $("#header").prepend(formattedName, formattedRole);
+// $("#header").append(formattedPic, formattedMessage, HTMLskillsStart);
+// $("#skills").append(formattedSkills);
 
 var education = {
     "schools": [
@@ -59,14 +59,14 @@ var education = {
     ]
 };
 
-education["schools"] = HTMLschoolName.replace("%data%", "University of Tartu");
-education["onlineCourses"] = HTMLschoolDegree.replace("%data%", "MSc Software Engineering");
-education["dates"] = HTMLschoolDates.replace("%data%", "2015-2016");
-education["location"] = HTMLschoolLocation.replace("%data%", "University of Tartu, Estonia");
-education["major"] = HTMLschoolMajor.replace("%data%", "Enterprise systems");
+// education["schools"] = HTMLschoolName.replace("%data%", "University of Tartu");
+// education["onlineCourses"] = HTMLschoolDegree.replace("%data%", "MSc Software Engineering");
+// education["dates"] = HTMLschoolDates.replace("%data%", "2015-2016");
+// education["location"] = HTMLschoolLocation.replace("%data%", "University of Tartu, Estonia");
+// education["major"] = HTMLschoolMajor.replace("%data%", "Enterprise systems");
 
-$("#education").append(HTMLschoolStart);
-$(".education-entry").prepend(education.school, education.degree, education.dates, education.location, education.major);
+// $("#education").append(HTMLschoolStart);
+// $(".education-entry").prepend(education.school, education.degree, education.dates, education.location, education.major);
 
 
 var work = {
@@ -99,9 +99,9 @@ var work = {
 // work.location = HTMLworkLocation.replace("%data%", "internet");
 // work.description = HTMLworkDescription.replace("%data%", "Building web based solutions using HTML and CSS")
 
-$("#workExperience").append(HTMLworkStart);
+// $("#workExperience").append(HTMLworkStart);
 // $(".work-entry").prepend(work["employer"], work["position"], work["dates"], work["location"], work["description"]);
-$(".work-entry").prepend(work.jobs);
+// $(".work-entry").prepend(work.jobs);
 
 var projects = {
     "projects": [
