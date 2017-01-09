@@ -13,6 +13,23 @@ var bio = {
     "skills": ["awesomness", "no-sleep", "delivering things"]
 };
 
+
+if (bio.skills.length > 0) {
+    $("#header").append(HTMLskillsStart);
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+    $("#skills").append(formattedSkill);
+
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[1])
+    $("#skills").append(formattedSkill);
+
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[2])
+    $("#skills").append(formattedSkill);
+
+    formattedSkill = HTMLskills.replace("%data%", bio.skills[3])
+    $("#skills").append(formattedSkill);
+} 
+
 // var formattedName = HTMLheaderName.replace("%data%", bio.name);
 // var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 // var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
@@ -41,7 +58,7 @@ var education = {
             "degree": "Bachelors of Business Administration",
             "dates": "2012-2015",
             "location": "Espoo, Finland",
-            "major": "Busines Information Technology"
+            "major": "Business Information Technology"
         }
     ],
     "onlineCourses": [
@@ -69,29 +86,27 @@ var education = {
 // $(".education-entry").prepend(education.school, education.degree, education.dates, education.location, education.major);
 
 
-var work = {
-    "jobs": [
-        {
-            "employer": "Upwork",
-            "title": "Web designer",
-            "location": "Worldwide",
-            "dates": "2015 - today",
-            "description": "Bulding web based solutions using HTML and CSS",
-        }, {
-            "employer": "University of Tartu",
-            "title": "Assistant lecturer",
-            "location": "Tartu, Estonia",
-            "dates": "February 2016 - June 2016",
-            "description": "",
-        }, {
-            "employer": "Laurea University of Applied Sciences",
-            "title": "Editor-in-Chief of university internal digital media",
-            "location": "Espoo, Finland",
-            "dates": "May 2015 - December 2015",
-            "description": "",
-        }
-        ]
-};
+// var work = {
+//     "jobs": [{
+//             "employer": "Upwork",
+//             "title": "Web designer",
+//             "location": "Internet",
+//             "dates": "2015 - today",
+//             "description": "Bulding web based solutions using HTML and CSS",
+//         }, {
+//             "employer": "University of Tartu",
+//             "title": "Assistant lecturer",
+//             "location": "Tartu, Estonia",
+//             "dates": "February 2016 - June 2016",
+//             "description": "",
+//         }, {
+//             "employer": "Laurea University of Applied Sciences",
+//             "title": "Editor-in-Chief of university internal digital media",
+//             "location": "Espoo, Finland",
+//             "dates": "May 2015 - December 2015",
+//             "description": "",
+//         }]
+// };
 
 // work.employer = HTMLworkEmployer.replace("%data%", "Upwork");
 // work.position = HTMLworkTitle.replace("%data%", "Web designer");
@@ -103,18 +118,18 @@ var work = {
 // $(".work-entry").prepend(work["employer"], work["position"], work["dates"], work["location"], work["description"]);
 // $(".work-entry").prepend(work.jobs);
 
-var projects = {
-    "projects": [
-        {
-            "title": "",
-            "dates": "",
-            "description": "",
-            "images": ""
-        }, {
-            "title": "",
-            "dates": "",
-            "description": "",
-            "images": ""
-        }
-    ]
-};
+// var projects = {
+//     "projects": [
+//         {
+//             "title": "Personal page re-design",
+//             "dates": "",
+//             "description": "",
+//             "images": ""
+//         }, {
+//             "title": "",
+//             "dates": "",
+//             "description": "",
+//             "images": ""
+//         }
+//     ]
+// };
