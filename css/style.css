@@ -5,9 +5,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
-.clear-fix {
-  overflow: auto;
-}
+.clear-fix {overflow: auto;}
 
 .education-entry, .work-entry, .project-entry {
   padding: 0 5%;
@@ -44,7 +42,6 @@ h4 {
 
 h2, h3, h4, h5 {
   padding:10px 5%;
-
 }
 
 .date-text {
@@ -88,13 +85,9 @@ a {
   display: none;
 }
 
-.orange {
-  background-color: #f5ae23;
-}
+.orange {background-color: #f5ae23;}
 
-.orange-text {
-  color: #f5ae23;
-}
+.orange-text {color: #f5ae23;}
 
 .white-text {
   font-weight: bold;
@@ -131,13 +124,9 @@ a {
   padding: 10px;
 }
 
-.center-content {
-  padding: 2.5% 5%;
-}
+.center-content {padding: 2.5% 5%;}
 
-ul {
-  list-style-type: none;
-}
+ul {list-style-type: none;}
 
 .biopic {
   float: left;
@@ -146,17 +135,11 @@ ul {
   display: none;
 }
 
-img {
-  padding: 10px;
-}
+img {padding: 10px;max-width: 40%;}
 
-span {
-  padding: 5px;
-}
+span {padding: 5px;}
 
-#lets-connect {
-  text-align: center;
-}
+#lets-connect {text-align: center;}
 
 /* Media queries to handle various device widths */
 
@@ -173,15 +156,9 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+  #lets-connect {margin-top: 10%;}
+  .biopic {width: 150px;}
+  .welcome-message {display: none;}
 }
 
 #map {
@@ -198,7 +175,5 @@ span {
 
 @media only screen and (min-width: 750px) {
   #skills-h3,
-  .biopic {
-    display: block;
-  }
+  .biopic {display: block;}
 }

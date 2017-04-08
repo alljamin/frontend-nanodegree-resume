@@ -6,11 +6,11 @@ var bio = {
         "email": "aleksandr.lmn@gmail.com",
         "twitter": "alljamin",
         "github": "alljamin",
-        "location": "Adelaide",
+        "location": "Adelaide, South Australia",
     },
     "biopic": "images/fry.jpg",
     "welcomeMessage": "Now we're doomed!",
-    "skills": ["awesomness", "no-sleep", "delivering things"]
+    "skills": ["HTML5", "CSS3", "workflow automation"]
 };
 bio.display = function() {
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -80,29 +80,29 @@ work.display();
 var projects = {
     "projects": [
         {
-            "title": "Project one",
-            "dates": "3000",
+            "title": "Personal webpage redesign",
+            "dates": "December 2016",
             "description": "Redesigning my personal page",
-            // "images": ""
+            "images": "images/personal-page.jpg"
         }, {
-            "title": "Project two",
-            "dates": "2000",
-            "description": "desc",
-            // "images": ""
+            "title": "Bicycle restoration project",
+            "dates": "July 2013",
+            "description": "Restored a road bicycle from the scrapyard",
+            "images": "images/bike.jpg"
         }
     ]
 };
 projects.display = function() {
     for(i = 0; i < projects.projects.length; i++){
         $("#projects").append(HTMLprojectStart);
-        var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
 		$(".project-entry:last").append(formattedTitle);
-		var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
+		var formattedDates = HTMLprojectDates.replace("%data%",projects.projects[i].dates);
 		$(".project-entry:last").append(formattedDates);
-		var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
+		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
 		$(".project-entry:last").append(formattedDescription);
-        // var formattedImage = HTMLprojectImage.replace("%data%", img);
-        // $(".project-entry:last").append(formattedImage);
+        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images);
+        $(".project-entry:last").append(formattedImage);
     }
 };
 projects.display();
@@ -114,13 +114,13 @@ var education = {
             "degree": "Master Software Engineering",
             "dates": "2015-2016",
             "location": "Tartu, Estonia",
-            "major": "Enterprise Systems"
+            "major": "Software Engineering"
         }, {
             "name": "Laurea University of Applied Sciences",
             "degree": "Bachelor of Business Administration",
             "dates": "2012-2015",
             "location": "Espoo, Finland",
-            "major": "Business Information Technology"
+            "major": "Business Administration"
         }
     ],
     "onlineCourses": [
@@ -147,7 +147,7 @@ education.display = function() {
         $(".education-entry:last").append(formattedDates);
         var formattedLocation = HTMLschoolLocation.replace("%data%",education.schools[i].location);
         $(".education-entry:last").append(formattedLocation);
-        var formattedMajor = HTMLschoolMajor.replace("%data%",education.schools[i].majors);
+        var formattedMajor = HTMLschoolMajor.replace("%data%",education.schools[i].major);
         $(".education-entry:last").append(formattedMajor);
     }
     $("#education").append(HTMLonlineClasses);
